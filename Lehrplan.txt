@@ -1,0 +1,7 @@
+1. Termin: 
+	was wird benötigt (Visual Studio, Git, SFML); 
+	Passwort Bekanntgabe; 
+	Ideenfindung;
+
+2.Termin:
+	

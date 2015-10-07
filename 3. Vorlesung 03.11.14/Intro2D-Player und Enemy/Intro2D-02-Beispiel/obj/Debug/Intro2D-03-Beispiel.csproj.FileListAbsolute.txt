@@ -1,0 +1,34 @@
+C:\Users\tobias\Desktop\Intro2D-02-Beispiel\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe.config
+C:\Users\tobias\Desktop\Intro2D-02-Beispiel\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.exe
+C:\Users\tobias\Desktop\Intro2D-02-Beispiel\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.pdb
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe.config
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.exe
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.pdb
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\csfml-audio-2.dll
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\csfml-graphics-2.dll
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\csfml-window-2.dll
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\libsndfile-1.dll
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\openal32.dll
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Pictures\Enemy.png
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Pictures\EnemyGreen.png
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Pictures\player.png
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.pdb
+C:\Users\tobias\Desktop\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-03-Beispiel.csprojResolveAssemblyReference.cache
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe.config
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.exe
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.pdb
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\csfml-audio-2.dll
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\csfml-graphics-2.dll
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\csfml-window-2.dll
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\libsndfile-1.dll
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\openal32.dll
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Pictures\Enemy.png
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Pictures\EnemyGreen.png
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Pictures\player.png
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.pdb
+D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-03-Beispiel.csprojResolveAssemblyReference.cache
+E:\Acagamics\Material\Veranstaltungen\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe.config
+E:\Acagamics\Material\Veranstaltungen\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.exe
+E:\Acagamics\Material\Veranstaltungen\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.pdb
