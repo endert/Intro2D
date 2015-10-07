@@ -1,0 +1,7 @@
+Jump:
+from: http://www.freesound.org/people/fins/
+sound: http://www.freesound.org/people/fins/sounds/172205/
+
+asia_1:
+music: https://soundcloud.com/zarnosch/pandas-on-the-run
+from: http://awesome-co.de/pandas_on_the_run/
