@@ -1,7 +1,38 @@
-1. Termin: 
-	was wird benötigt (Visual Studio, Git, SFML); 
+1. Termin (Vorstellung):
+	was wird benötigt (Visual Studio, Git, SFML) + kurze Erklärung;
 	Passwort Bekanntgabe; 
 	Ideenfindung;
 
-2.Termin:
+2. Termin (Erste Schritte):
+	SFML Einbindung;
+	Git Einrichtung;
+	Wie man ein proj erstellt;
+	overall: Erste Schritte/ Set up;
+	Öffnen eines Fenster;
+
+3. Termin (Player and Enemy):
+	Was ist eine Klasse?;
+	Was kann/braucht der Player/Enemy;
+	Live Coding;
+
+4. Termin (Map):
+	wie baut man map aus bitmap;
+	Kollisions Abfrage;
+	Live Coding;
+
+5. Termin (gameTime):
+	WAS ZUM TEUFEL IST NE GAMETIME??;
+	(Animationen);
+	Live Coding;
+
+Nach Wunsch (die Reihenfolge oder Themen die gewünscht wurden):
 	
+	GameStates (enum)!!;
+	(immer Live Coding zu jedem Thema)
+	Springen;
+	Particle (wenn gewünscht oder gast vortrag);
+	GameObjects (abstracte Klassen / vererbung);
+	Sounds (wenn gewünscht);
+
+Letzter Termin:
+	Spiele Vorstellung;
