@@ -44,6 +44,7 @@ namespace Intro2D_02_Beispiel
 
             // Achte darauf, ob Fenster geschlossen wird
             win.Closed += win_Closed;
+            //win.Closed += (sender, e) => { ((RenderWindow)sender).Close(); };
 
             // Das eigentliche Spiel
             while (win.IsOpen())

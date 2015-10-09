@@ -34,3 +34,6 @@ E:\Acagamics\Material\Veranstaltungen\14-15 Intro2D\2. Vorlesung 27.10.14\Intro2
 E:\Acagamics\Material\Veranstaltungen\14-15 Intro2D\2. Vorlesung 27.10.14\Intro2D-02-Beispiel\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe
 E:\Acagamics\Material\Veranstaltungen\14-15 Intro2D\2. Vorlesung 27.10.14\Intro2D-02-Beispiel\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.pdb
 E:\Acagamics\Material\Veranstaltungen\14-15 Intro2D\2. Vorlesung 27.10.14\Intro2D-02-Beispiel\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.csprojResolveAssemblyReference.cache
+C:\Users\Kedreals\Desktop\Uni\Acagamics\Intro2D\2. Vorlesung 27.10.14\Intro2D-02-Beispiel\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe.config
+C:\Users\Kedreals\Desktop\Uni\Acagamics\Intro2D\2. Vorlesung 27.10.14\Intro2D-02-Beispiel\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.exe
+C:\Users\Kedreals\Desktop\Uni\Acagamics\Intro2D\2. Vorlesung 27.10.14\Intro2D-02-Beispiel\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.pdb
