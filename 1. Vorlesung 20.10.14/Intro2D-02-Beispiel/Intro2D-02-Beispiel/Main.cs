@@ -17,41 +17,41 @@ namespace Intro2D_02_Beispiel
             RenderWindow win = new RenderWindow(new VideoMode(800, 600), "Mein erstes Fenster");
 
             // Achte darauf, ob Fenster geschlossen wird
-            win.Closed += win_Closed;
+            win.Closed += Win_Closed;
 
-            initialize();
+            Initialize();
             // Das eigentliche Spiel
             while (win.IsOpen())
             {
-                draw(win);
-                update();
+                Draw(win);
+                Update();
                 // Schauen ob Fenster geschlossen werden soll
                 win.DispatchEvents();
             }
         }
 
-        static void win_Closed(object sender, EventArgs e)
+        static void Win_Closed(object sender, EventArgs e)
         {
             // Fenster Schließen
             ((RenderWindow)sender).Close();
         }
 
 
-        public static void initialize()
+        public static void Initialize()
         {
             player = new Player();
         }
 
-        public static void draw(RenderWindow window)
+        public static void Draw(RenderWindow window)
         {
             window.Clear();
-            player.draw(window);
+            player.Draw(window);
             window.Display();
         }
 
-        public static void update()
+        public static void Update()
         {
-            player.move();
+            player.Move();
         }
     }
 }
