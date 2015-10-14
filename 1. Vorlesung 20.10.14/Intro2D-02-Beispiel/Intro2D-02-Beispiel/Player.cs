@@ -26,7 +26,7 @@ namespace Intro2D_02_Beispiel
             playerSprite.Scale = new Vector2f(0.25f, 0.25f);
         }
 
-        public void move()
+        public void Move()
         {
             if (Keyboard.IsKeyPressed(Keyboard.Key.A))
                 playerSprite.Position = new Vector2f(playerSprite.Position.X - 1, playerSprite.Position.Y);
@@ -38,7 +38,7 @@ namespace Intro2D_02_Beispiel
                 playerSprite.Position = new Vector2f(playerSprite.Position.X, playerSprite.Position.Y - 1);
 
         }
-        public void draw(RenderWindow window)
+        public void Draw(RenderWindow window)
         {
             window.Draw(playerSprite);
         }
