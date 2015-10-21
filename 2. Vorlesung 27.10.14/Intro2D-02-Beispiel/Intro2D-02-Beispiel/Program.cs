@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SFML.Window;
-using SFML.Graphics;
 
 namespace Intro2D_02_Beispiel
 {
@@ -37,27 +35,8 @@ namespace Intro2D_02_Beispiel
         //  - WENN IHR DIESES PROJEKT WEITERVERWENDEN WOLLT, MÜSST IHR DIE VERWEISE (erster Teil) NEU HINZUFÜGEN
 
         // Wird für Programm ablauf benötigt
-        public static void Main()
+        static void Main()
         {
-            // Erzeuge ein neues Fenster
-            RenderWindow win = new RenderWindow(new VideoMode(800, 600), "Mein erstes Fenster");
-
-            // Achte darauf, ob Fenster geschlossen wird
-            win.Closed += win_Closed;
-            //win.Closed += (sender, e) => { ((RenderWindow)sender).Close(); };
-
-            // Das eigentliche Spiel
-            while (win.IsOpen())
-            {
-                // Schauen ob Fenster geschlossen werden soll
-                win.DispatchEvents();
-            }
-        }
-
-        static void win_Closed(object sender, EventArgs e)
-        {
-            // Fenster Schließen
-            ((RenderWindow) sender).Close();
         }
     }
 }
