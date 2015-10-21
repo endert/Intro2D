@@ -32,3 +32,6 @@ D:\Acagamics\Material\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Ene
 E:\Acagamics\Material\Veranstaltungen\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe.config
 E:\Acagamics\Material\Veranstaltungen\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.exe
 E:\Acagamics\Material\Veranstaltungen\14-15 Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.pdb
+C:\Users\Kedreals\Desktop\Uni\Acagamics\Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe.config
+C:\Users\Kedreals\Desktop\Uni\Acagamics\Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.exe
+C:\Users\Kedreals\Desktop\Uni\Acagamics\Intro2D\3. Vorlesung 03.11.14\Intro2D-Player und Enemy\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.pdb

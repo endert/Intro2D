@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SFML.Graphics;
+using SFML.Window;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,6 +39,39 @@ namespace Intro2D_02_Beispiel
         // Wird für Programm ablauf benötigt
         static void Main()
         {
+            //initialisiert ein RenderWindow
+            RenderWindow win = new RenderWindow(new VideoMode(800, 600), "Test Window");
+
+            //fügt die Close Methode dem Closed Event von dem RenderWindow hinzu
+            win.Closed += Close;
+            //fancy alternativen:
+            //win.Closed += (sender, e) => { ((RenderWindow)sender).Close(); };
+            //win.Closed += delegate { win.Close(); };
+
+            //solange das Window offen ist
+            while (win.IsOpen())
+            //in SFML2.2 while(win.IsOpen)
+            {
+                //hellblau oder so
+                win.Clear(new Color(40, 150, 200));
+
+                //trigger alle events
+                win.DispatchEvents();
+
+                //zeige alles gezeichnete an
+                win.Display();
+            }
+
+        }
+
+        /// <summary>
+        /// Versucht den sender in ein RenderWindow zu casten und es dann zu schließen
+        /// </summary>
+        /// <param name="sender">das Object das das Event auslöst</param>
+        /// <param name="e">die parameter die mit dem Event übergeben werden</param>
+        static void Close(object sender, EventArgs e)
+        {
+            ((RenderWindow)sender).Close();
         }
     }
 }
