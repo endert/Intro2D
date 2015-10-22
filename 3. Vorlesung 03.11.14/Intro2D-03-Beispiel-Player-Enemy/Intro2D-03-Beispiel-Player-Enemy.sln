@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro2D-03-Beispiel-Player-Enemy", "Intro2D-03-Beispiel-Player-Enemy\Intro2D-03-Beispiel-Player-Enemy.csproj", "{2F526FB1-54DC-483A-9E3D-2A8A3B9673FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F526FB1-54DC-483A-9E3D-2A8A3B9673FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F526FB1-54DC-483A-9E3D-2A8A3B9673FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F526FB1-54DC-483A-9E3D-2A8A3B9673FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F526FB1-54DC-483A-9E3D-2A8A3B9673FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
