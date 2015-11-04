@@ -33,6 +33,8 @@ namespace Intro_2D_04_Beispiel
         public override void Update()
         {
             MovingDirection = Program.Player.Position - sprite.Position;
+            MovingDirection *= 1 / (float)Math.Sqrt(MovingDirection.X * MovingDirection.X + MovingDirection.Y * MovingDirection.Y);
+            MovingDirection *= MovementSpeed;
             Move();
         }
     }
