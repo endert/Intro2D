@@ -10,10 +10,12 @@ namespace Intro_2D_04_Beispiel
 {
     class Program
     {
-        //declare Players and Enemies
-        public static Player Player { get; private set; }
+        //Enemies (attributes, no need to access outside of this class)
         static Enemy enemy1;
         static Enemy enemy2;
+
+        //properties (need in other classes, for example Enemie needs player and all gObj needs the map
+        public static Player Player { get; private set; }
         public static Map map { get; private set; }
 
         static void Main(string[] args)

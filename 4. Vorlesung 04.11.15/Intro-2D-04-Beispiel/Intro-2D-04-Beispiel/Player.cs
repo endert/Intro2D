@@ -21,12 +21,15 @@ namespace Intro_2D_04_Beispiel
             textur = new Texture("Pictures/Player.png");
             sprite = new Sprite(textur);
             sprite.Position = startPosition;
-            MovementSpeed = 0.2f;
+            movementSpeed = 0.2f;
 
             //scale needed because the texture is way too large
             sprite.Scale = new Vector2f(0.1f, 0.1f);
         }
 
+        /// <summary>
+        /// sets the MovingDirection according to the keyboard input
+        /// </summary>
         void KeyboardInput()
         {
             if (Keyboard.IsKeyPressed(Keyboard.Key.W))

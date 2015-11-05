@@ -22,7 +22,7 @@ namespace Intro_2D_04_Beispiel
         {
             textur = new Texture(direction);
             sprite = new Sprite(textur);
-            MovementSpeed = 0.1f;
+            movementSpeed = 0.1f;
 
             sprite.Position = sPosition;
         }
@@ -33,8 +33,6 @@ namespace Intro_2D_04_Beispiel
         public override void Update()
         {
             MovingDirection = Program.Player.Position - sprite.Position;
-            MovingDirection *= 1 / (float)Math.Sqrt(MovingDirection.X * MovingDirection.X + MovingDirection.Y * MovingDirection.Y);
-            MovingDirection *= MovementSpeed;
             Move();
         }
     }

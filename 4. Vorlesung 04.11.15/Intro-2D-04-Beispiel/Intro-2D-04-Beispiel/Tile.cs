@@ -8,6 +8,9 @@ using SFML.Window;
 
 namespace Intro_2D_04_Beispiel
 {
+    /// <summary>
+    /// the most simple logic unit
+    /// </summary>
     class Tile
     {
         RectangleShape shape;
