@@ -18,6 +18,7 @@ namespace Intro_2D_05_Beispiel
         protected Texture textur;
         protected float baseMovementSpeed;
         protected float movementSpeed;
+        protected bool isMoving = false;
 
         //Propreties
         /// <summary>
@@ -48,7 +49,9 @@ namespace Intro_2D_05_Beispiel
             MovingDirection *= movementSpeed;
 
             //adding a percentage of the direction to the position. guess what comes now^^ Math \(^^)/
-            if (Program.map.IsWalkable(this))
+            isMoving = Program.map.IsWalkable(this);
+
+            if (isMoving)
                 sprite.Position += MovingDirection;
         }
 

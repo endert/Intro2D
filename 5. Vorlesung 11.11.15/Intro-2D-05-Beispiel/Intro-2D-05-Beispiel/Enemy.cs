@@ -13,6 +13,8 @@ namespace Intro_2D_05_Beispiel
     /// </summary>
     class Enemy : GameObject
     {
+        Texture textur2;
+
         /// <summary>
         /// initializes a new Enemy
         /// </summary>
@@ -27,9 +29,9 @@ namespace Intro_2D_05_Beispiel
             sprite.Position = sPosition;
         }
 
-        private void Animate(GameTime gTime)
+        public Enemy(string direction, Vector2f sPos, string direction2) : this(direction, sPos)
         {
-
+            textur2 = new Texture(direction2);
         }
 
         /// <summary>
@@ -40,6 +42,7 @@ namespace Intro_2D_05_Beispiel
             movementSpeed = baseMovementSpeed * gTime.Ellapsed.Milliseconds;
             MovingDirection = Program.Player.Position - sprite.Position;
             Move();
+            //Animate(gTime);
         }
     }
 }

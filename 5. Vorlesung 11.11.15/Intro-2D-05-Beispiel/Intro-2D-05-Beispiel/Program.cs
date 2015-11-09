@@ -43,7 +43,7 @@ namespace Intro_2D_05_Beispiel
             gTime = new GameTime();
             map = new Map(new System.Drawing.Bitmap("Pictures/Map.bmp"));
             Player = new Player(new Vector2f(map.TileSize + 30,map.TileSize + 30));
-            enemy1 = new Enemy("Pictures/EnemyGreen.png", new Vector2f(900, 100));
+            enemy1 = new Enemy("Pictures/EnemyGreen.png", new Vector2f(800, 100), "Pictures/EnemyGreenMove.png");
             enemy2 = new Enemy("Pictures/EnemyRed.png", new Vector2f(100, 600));
         }
 
