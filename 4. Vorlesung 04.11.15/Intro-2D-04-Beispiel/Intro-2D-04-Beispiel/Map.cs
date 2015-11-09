@@ -54,8 +54,8 @@ namespace Intro_2D_04_Beispiel
             int sy = (int)(gObj.Position.Y / TileSize + gObj.Size.Y / TileSize + gObj.MovingDirection.Y / TileSize);
 
             //if the object is outside of the map
-            if (x >= tiles.GetLength(0) || x < tiles.GetLength(0) || y >= tiles.GetLength(1) || y < tiles.GetLength(1)
-                || sx >= tiles.GetLength(0) || sx < tiles.GetLength(0) || sy >= tiles.GetLength(1) || sy < tiles.GetLength(1))
+            if (x >= tiles.GetLength(0) || x < 0 || y >= tiles.GetLength(1) || y < 0
+                || sx >= tiles.GetLength(0) || sx < 0 || sy >= tiles.GetLength(1) || sy < 0)
                 return false;
 
             return tiles[x, y].Walkable && tiles[sx, y].Walkable && tiles[x, sy].Walkable && tiles[sx, sy].Walkable;
