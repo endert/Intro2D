@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Intro_2D_04_Beispiel
+namespace Intro_2D_05_Beispiel
 {
     /// <summary>
     /// abstract base class for player and enemy may be later more
@@ -16,7 +16,9 @@ namespace Intro_2D_04_Beispiel
         //Attributes
         protected Sprite sprite;
         protected Texture textur;
+        protected float baseMovementSpeed;
         protected float movementSpeed;
+        protected bool isMoving = false;
 
         //Propreties
         /// <summary>
@@ -47,7 +49,9 @@ namespace Intro_2D_04_Beispiel
             MovingDirection *= movementSpeed;
 
             //adding a percentage of the direction to the position. guess what comes now^^ Math \(^^)/
-            if (Program.map.IsWalkable(this))
+            isMoving = Program.map.IsWalkable(this);
+
+            if (isMoving)
                 sprite.Position += MovingDirection;
         }
 
@@ -55,7 +59,7 @@ namespace Intro_2D_04_Beispiel
         /// abstract Methode, must be implemented by all subclasses which are not abstract
         /// <para>shall Update this instance by calling all needed Methods</para>
         /// </summary>
-        public abstract void Update();
+        public abstract void Update(GameTime gTime);
         /// <summary>
         /// Draws the sprite in the given Window
         /// </summary>

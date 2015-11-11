@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Intro_2D_04_Beispiel
+namespace Intro_2D_05_Beispiel
 {
     class Program
     {
@@ -17,6 +17,8 @@ namespace Intro_2D_04_Beispiel
         //properties (need in other classes, for example Enemie needs player and all gObj needs the map
         public static Player Player { get; private set; }
         public static Map map { get; private set; }
+
+        static GameTime gTime;
 
         static void Main(string[] args)
         {
@@ -38,9 +40,10 @@ namespace Intro_2D_04_Beispiel
         /// </summary>
         public static void Initialize()
         {
+            gTime = new GameTime();
             map = new Map(new System.Drawing.Bitmap("Pictures/Map.bmp"));
             Player = new Player(new Vector2f(map.TileSize + 30,map.TileSize + 30));
-            enemy1 = new Enemy("Pictures/EnemyGreen.png", new Vector2f(900, 100));
+            enemy1 = new Enemy("Pictures/EnemyGreen.png", new Vector2f(800, 100), "Pictures/EnemyGreenMove.png");
             enemy2 = new Enemy("Pictures/EnemyRed.png", new Vector2f(100, 600));
         }
 
@@ -66,9 +69,10 @@ namespace Intro_2D_04_Beispiel
         /// </summary>
         static void Update()
         {
-            Player.Update();
-            enemy1.Update();
-            enemy2.Update();
+            gTime.Update();
+            Player.Update(gTime);
+            enemy1.Update(gTime);
+            enemy2.Update(gTime);
         }
     }
 }

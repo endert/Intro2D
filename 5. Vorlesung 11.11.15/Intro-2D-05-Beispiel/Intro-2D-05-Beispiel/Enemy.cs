@@ -6,13 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Intro_2D_04_Beispiel
+namespace Intro_2D_05_Beispiel
 {
     /// <summary>
     /// the enemy
     /// </summary>
     class Enemy : GameObject
     {
+        Texture textur2;
+
         /// <summary>
         /// initializes a new Enemy
         /// </summary>
@@ -22,18 +24,25 @@ namespace Intro_2D_04_Beispiel
         {
             textur = new Texture(direction);
             sprite = new Sprite(textur);
-            movementSpeed = 0.1f;
+            baseMovementSpeed = 0.1f;
 
             sprite.Position = sPosition;
+        }
+
+        public Enemy(string direction, Vector2f sPos, string direction2) : this(direction, sPos)
+        {
+            textur2 = new Texture(direction2);
         }
 
         /// <summary>
         /// calls the move Methode
         /// </summary>
-        public override void Update()
+        public override void Update(GameTime gTime)
         {
+            movementSpeed = baseMovementSpeed * gTime.Ellapsed.Milliseconds;
             MovingDirection = Program.Player.Position - sprite.Position;
             Move();
+            //Animate(gTime);
         }
     }
 }

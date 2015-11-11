@@ -7,7 +7,7 @@ using System.Drawing;
 using SFML.Window;
 using SFML.Graphics;
 
-namespace Intro_2D_04_Beispiel
+namespace Intro_2D_05_Beispiel
 {
     class Map
     {
@@ -53,22 +53,15 @@ namespace Intro_2D_04_Beispiel
             int sx = (int)(gObj.Position.X / TileSize + gObj.Size.X / TileSize + gObj.MovingDirection.X / TileSize);
             int sy = (int)(gObj.Position.Y / TileSize + gObj.Size.Y / TileSize + gObj.MovingDirection.Y / TileSize);
 
-            //if the object is outside of the map
-            if (x >= tiles.GetLength(0) || x < 0 || y >= tiles.GetLength(1) || y < 0
-                || sx >= tiles.GetLength(0) || sx < 0 || sy >= tiles.GetLength(1) || sy < 0)
-                return false;
-
-            return tiles[x, y].Walkable && tiles[sx, y].Walkable && tiles[x, sy].Walkable && tiles[sx, sy].Walkable;
-
             //instead of the if statement above you can use a try catch as well
-            //try
-            //{
-            //    return tiles[x, y].Walkable && tiles[sx, y].Walkable && tiles[x, sy].Walkable && tiles[sx, sy].Walkable;
-            //}
-            //catch (IndexOutOfRangeException)
-            //{
-            //    return false;
-            //}
+            try
+            {
+                return tiles[x, y].Walkable && tiles[sx, y].Walkable && tiles[x, sy].Walkable && tiles[sx, sy].Walkable;
+            }
+            catch (IndexOutOfRangeException)
+            {
+                return false;
+            }
         }
 
         /// <summary>

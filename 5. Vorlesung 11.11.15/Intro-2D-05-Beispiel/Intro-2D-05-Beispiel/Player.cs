@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SFML.Graphics;
 using SFML.Window;
 
-namespace Intro_2D_04_Beispiel
+namespace Intro_2D_05_Beispiel
 {
     /// <summary>
     /// the player
@@ -21,7 +21,7 @@ namespace Intro_2D_04_Beispiel
             textur = new Texture("Pictures/Player.png");
             sprite = new Sprite(textur);
             sprite.Position = startPosition;
-            movementSpeed = 0.2f;
+            baseMovementSpeed = 0.2f;
 
             //scale needed because the texture is way too large
             sprite.Scale = new Vector2f(0.1f, 0.1f);
@@ -50,8 +50,9 @@ namespace Intro_2D_04_Beispiel
         /// <summary>
         /// Calls the Move methode
         /// </summary>
-        public override void Update()
+        public override void Update(GameTime gTime)
         {
+            movementSpeed = baseMovementSpeed * gTime.Ellapsed.Milliseconds;
             KeyboardInput();
             Move();
         }
