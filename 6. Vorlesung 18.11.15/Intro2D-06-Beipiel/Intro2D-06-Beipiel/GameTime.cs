@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Intro_2D_05_Beispiel
+namespace Intro2D_06_Beispiel
 {
     /// <summary>
     /// class that contains infos about the time

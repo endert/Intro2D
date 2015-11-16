@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Intro_2D_05_Beispiel
+namespace Intro2D_06_Beispiel
 {
     /// <summary>
     /// the enemy
