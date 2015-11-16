@@ -25,11 +25,13 @@
 	(Animationen);
 	Live Coding;
 
+6. Termin (Gravitation u Sounds):
+
 Nach Wunsch (die Reihenfolge oder Themen die gewünscht wurden):
 	
 	GameStates (enum)!!;
 	(immer Live Coding zu jedem Thema)
-	Springen;
+	Gravitation u. Springen;
 	Particle (wenn gewünscht oder gast vortrag);
 	GameObjects (abstracte Klassen / vererbung);
 	Sounds (wenn gewünscht);
