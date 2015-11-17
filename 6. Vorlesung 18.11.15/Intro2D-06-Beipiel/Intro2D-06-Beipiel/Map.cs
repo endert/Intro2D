@@ -53,10 +53,25 @@ namespace Intro2D_06_Beispiel
             int sx = (int)(gObj.Position.X / TileSize + gObj.Size.X / TileSize + gObj.MovingDirection.X / TileSize);
             int sy = (int)(gObj.Position.Y / TileSize + gObj.Size.Y / TileSize + gObj.MovingDirection.Y / TileSize);
 
-            //instead of the if statement above you can use a try catch as well
             try
             {
                 return tiles[x, y].Walkable && tiles[sx, y].Walkable && tiles[x, sy].Walkable && tiles[sx, sy].Walkable;
+            }
+            catch (IndexOutOfRangeException)
+            {
+                return false;
+            }
+        }
+
+        public bool CheckDownWards(GameObject gObj)
+        {
+            int x = (int)(gObj.Position.X / TileSize);
+
+            int sx = (int)(gObj.Position.X / TileSize + (gObj.Size.X / TileSize));
+            int sy = (int)(gObj.Position.Y / TileSize + (gObj.Size.Y + 3) / TileSize );
+
+            try {
+                return tiles[x, sy].Walkable && tiles[sx, sy].Walkable;
             }
             catch (IndexOutOfRangeException)
             {
