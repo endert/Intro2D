@@ -13,6 +13,12 @@ namespace Intro2D_06_Beispiel
     /// </summary>
     class Player : GameObject
     {
+        bool isJumping = false;
+        float maxheight;
+        float jumpingHeight;
+        bool touchedGround = false;
+        bool rechedHeight = true;
+
         /// <summary>
         /// initializes the Player with default values
         /// </summary>
@@ -22,6 +28,8 @@ namespace Intro2D_06_Beispiel
             sprite = new Sprite(textur);
             sprite.Position = startPosition;
             baseMovementSpeed = 0.2f;
+            jumpingHeight = 100;
+            maxheight = sprite.Position.Y;
 
             //scale needed because the texture is way too large
             sprite.Scale = new Vector2f(0.1f, 0.1f);
@@ -32,19 +40,19 @@ namespace Intro2D_06_Beispiel
         /// </summary>
         void KeyboardInput()
         {
-            if (Keyboard.IsKeyPressed(Keyboard.Key.W))
-                MovingDirection = new Vector2f(MovingDirection.X, -1);
-            else if (Keyboard.IsKeyPressed(Keyboard.Key.S))
-                MovingDirection = new Vector2f(MovingDirection.X, 1);
-            else
-                MovingDirection = new Vector2f(MovingDirection.X, 0);
-
             if (Keyboard.IsKeyPressed(Keyboard.Key.A))
                 MovingDirection = new Vector2f(-1, MovingDirection.Y);
             else if (Keyboard.IsKeyPressed(Keyboard.Key.D))
                 MovingDirection = new Vector2f(1, MovingDirection.Y);
             else
                 MovingDirection = new Vector2f(0, MovingDirection.Y);
+
+            if (Keyboard.IsKeyPressed(Keyboard.Key.Space) && !isJumping)
+            {
+                isJumping = true;
+                rechedHeight = false;
+                maxheight = sprite.Position.Y - jumpingHeight;
+            }
         }
 
         /// <summary>
@@ -52,6 +60,23 @@ namespace Intro2D_06_Beispiel
         /// </summary>
         public override void Update(GameTime gTime)
         {
+            touchedGround = !Program.map.CheckDownWards(this);
+            float div = (sprite.Position.Y + 10 - maxheight);
+
+            if (!rechedHeight && sprite.Position.Y - maxheight < 0.1f)
+                rechedHeight = true;
+
+            if (!rechedHeight && isJumping)
+            {
+                sprite.Position = new Vector2f(sprite.Position.X, sprite.Position.Y - (div / 400) * gTime.Ellapsed.Milliseconds);
+            }
+
+            if(!touchedGround && rechedHeight)
+            {
+                sprite.Position = new Vector2f(sprite.Position.X, sprite.Position.Y + (div/450) * gTime.Ellapsed.Milliseconds);
+                isJumping = false;
+            }
+
             movementSpeed = baseMovementSpeed * gTime.Ellapsed.Milliseconds;
             KeyboardInput();
             Move();
