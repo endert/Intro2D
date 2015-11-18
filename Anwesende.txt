@@ -3,6 +3,6 @@
 3. Veranstaltung: 42
 4. Veranstaltung: 32
 5. Veranstaltung: 30
-6. Veranstaltung: 
+6. Veranstaltung: 26
 7. Veranstaltung: 
 8. Veranstaltung: 
