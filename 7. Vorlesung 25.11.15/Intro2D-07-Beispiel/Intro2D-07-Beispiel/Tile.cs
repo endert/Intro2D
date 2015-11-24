@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SFML.Graphics;
 using SFML.Window;
 
-namespace Intro2D_06_Beispiel
+namespace Intro2D_07_Beispiel
 {
     /// <summary>
     /// the most simple logic unit

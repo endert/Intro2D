@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Intro2D_06_Beispiel
+namespace Intro2D_07_Beispiel
 {
     class Program
     {

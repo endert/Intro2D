@@ -7,7 +7,7 @@ using System.Drawing;
 using SFML.Window;
 using SFML.Graphics;
 
-namespace Intro2D_06_Beispiel
+namespace Intro2D_07_Beispiel
 {
     class Map
     {
