@@ -17,7 +17,6 @@ namespace Intro2D_06_Beispiel
         float maxheight;
         float jumpingHeight;
         bool touchedGround = false;
-        bool rechedHeight = true;
 
         /// <summary>
         /// initializes the Player with default values
@@ -28,7 +27,7 @@ namespace Intro2D_06_Beispiel
             sprite = new Sprite(textur);
             sprite.Position = startPosition;
             baseMovementSpeed = 0.2f;
-            jumpingHeight = 100;
+            jumpingHeight = 200;
             maxheight = sprite.Position.Y;
 
             //scale needed because the texture is way too large
@@ -47,11 +46,11 @@ namespace Intro2D_06_Beispiel
             else
                 MovingDirection = new Vector2f(0, MovingDirection.Y);
 
-            if (Keyboard.IsKeyPressed(Keyboard.Key.Space) && !isJumping)
+            if (Keyboard.IsKeyPressed(Keyboard.Key.Space) && !isJumping && touchedGround)
             {
                 isJumping = true;
-                rechedHeight = false;
                 maxheight = sprite.Position.Y - jumpingHeight;
+                Program.JumpSound.Play();
             }
         }
 
@@ -60,21 +59,21 @@ namespace Intro2D_06_Beispiel
         /// </summary>
         public override void Update(GameTime gTime)
         {
+            float div = sprite.Position.Y - maxheight;
+
             touchedGround = !Program.map.CheckDownWards(this);
-            float div = (sprite.Position.Y + 10 - maxheight);
 
-            if (!rechedHeight && sprite.Position.Y - maxheight < 0.1f)
-                rechedHeight = true;
-
-            if (!rechedHeight && isJumping)
+            if(!isJumping && Program.map.CheckDownWards(this))
             {
-                sprite.Position = new Vector2f(sprite.Position.X, sprite.Position.Y - (div / 400) * gTime.Ellapsed.Milliseconds);
+                sprite.Position += new Vector2f(0, (div+1f)/300);
             }
-
-            if(!touchedGround && rechedHeight)
+            if (isJumping)
             {
-                sprite.Position = new Vector2f(sprite.Position.X, sprite.Position.Y + (div/450) * gTime.Ellapsed.Milliseconds);
-                isJumping = false;
+                sprite.Position -= new Vector2f(0, (div + 1f) / 300);
+                if (Math.Abs(div) < 1f)
+                {
+                    isJumping = false;
+                }
             }
 
             movementSpeed = baseMovementSpeed * gTime.Ellapsed.Milliseconds;

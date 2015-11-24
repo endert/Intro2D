@@ -19,6 +19,9 @@ namespace Intro2D_06_Beispiel
         public static Player Player { get; private set; }
         public static Map map { get; private set; }
 
+        static Sound BackgroundMusic;
+        public static Sound JumpSound { get; private set; }
+
         static GameTime gTime;
 
         static void Main(string[] args)
@@ -42,6 +45,14 @@ namespace Intro2D_06_Beispiel
         public static void Initialize()
         {
             gTime = new GameTime();
+            BackgroundMusic = new Sound(new SoundBuffer("Sound/asia_1.ogg"));
+            BackgroundMusic.Loop = true;
+            BackgroundMusic.Volume = 30;
+            BackgroundMusic.Play();
+
+            JumpSound = new Sound(new SoundBuffer("Sound/jumpSound.wav"));
+            JumpSound.Volume = 100;
+
             map = new Map(new System.Drawing.Bitmap("Pictures/Map.bmp"));
             Player = new Player(new Vector2f(map.TileSize + 30,map.TileSize + 30));
             enemy1 = new Enemy("Pictures/EnemyGreen.png", new Vector2f(800, 100), "Pictures/EnemyGreenMove.png");
