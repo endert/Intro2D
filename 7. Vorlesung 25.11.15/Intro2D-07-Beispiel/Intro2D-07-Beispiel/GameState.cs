@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Intro2D_07_Beispiel
 {
+    /// <summary>
+    /// names of the existing GameStates
+    /// </summary>
     enum EGameState
     {
         None = -1,
@@ -19,11 +22,29 @@ namespace Intro2D_07_Beispiel
         Count
     }
 
+    /// <summary>
+    /// the methods of every gamestate
+    /// </summary>
     interface GameState
     {
+        /// <summary>
+        /// Initialize the content
+        /// </summary>
         void Initialize();
+        /// <summary>
+        /// loads all needed stuff for the initialize
+        /// </summary>
         void LoadContent();
+        /// <summary>
+        /// draws the content
+        /// </summary>
+        /// <param name="win"></param>
         void Draw(RenderWindow win);
-        void Update(GameTime t);
+        /// <summary>
+        /// updates the content
+        /// </summary>
+        /// <param name="t">the next GameState</param>
+        /// <returns></returns>
+        EGameState Update(GameTime t);
     }
 }
