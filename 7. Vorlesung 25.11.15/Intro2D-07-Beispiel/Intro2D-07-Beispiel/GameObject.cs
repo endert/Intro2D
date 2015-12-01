@@ -49,7 +49,7 @@ namespace Intro2D_07_Beispiel
             MovingDirection *= movementSpeed;
 
             //adding a percentage of the direction to the position. guess what comes now^^ Math \(^^)/
-            isMoving = Program.map.IsWalkable(this);
+            //isMoving = Program.map.IsWalkable(this);
 
             if (isMoving)
                 sprite.Position += MovingDirection;

@@ -60,7 +60,7 @@ namespace Intro2D_07_Beispiel
         public override void Update(GameTime gTime)
         {
             movementSpeed = baseMovementSpeed * gTime.Ellapsed.Milliseconds;
-            MovingDirection = Program.Player.Position - sprite.Position;
+           // MovingDirection = Program.Player.Position - sprite.Position;
             Move();
             if (isMoving)
                 Animate(gTime);

@@ -50,7 +50,7 @@ namespace Intro2D_07_Beispiel
             {
                 isJumping = true;
                 maxheight = sprite.Position.Y - jumpingHeight;
-                Program.JumpSound.Play();
+                //Program.JumpSound.Play();
             }
         }
 
@@ -61,9 +61,9 @@ namespace Intro2D_07_Beispiel
         {
             float div = sprite.Position.Y - maxheight;
 
-            touchedGround = !Program.map.CheckDownWards(this);
+            //touchedGround = !Program.map.CheckDownWards(this);
 
-            if(!isJumping && Program.map.CheckDownWards(this))
+           // if(!isJumping && Program.map.CheckDownWards(this))
             {
                 sprite.Position += new Vector2f(0, (div+1f)/300);
             }
