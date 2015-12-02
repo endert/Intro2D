@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Intro2D_02_Beispiel
+namespace Intro2D_Particles
 {
     class GameTime
     {

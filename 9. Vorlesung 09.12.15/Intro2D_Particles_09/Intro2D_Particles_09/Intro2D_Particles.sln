@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro2D-02-Beispiel", "Intro2D-02-Beispiel\Intro2D-02-Beispiel.csproj", "{0EE01A10-87BF-4274-AB2E-DFC827C4B521}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro2D_Particles", "Intro2D_Particles\Intro2D_Particles.csproj", "{0EE01A10-87BF-4274-AB2E-DFC827C4B521}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
