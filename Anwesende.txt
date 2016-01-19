@@ -7,3 +7,6 @@
 7. Veranstaltung: 16
 8. Veranstaltung: 20+Cord
 9. Veranstaltung: 20
+10. Veranstaltung: 12
+11. Vorlesung: 10
+12. Vorlesung: 
