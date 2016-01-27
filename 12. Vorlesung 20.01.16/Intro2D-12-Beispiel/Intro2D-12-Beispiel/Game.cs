@@ -25,23 +25,17 @@ namespace Intro2D_12_Beispiel
 
         void Load()
         {
-            if (!Directory.Exists("Saves"))
-                p = new Player();
-            else if (!File.Exists(Path))
-                p = new Player();
-            else
+            if(File.Exists(Path))
             {
                 using(StreamReader reader = new StreamReader(Path))
                 {
                     float hp = Convert.ToSingle(reader.ReadLine());
-                    float x = Convert.ToSingle(reader.ReadLine());
-                    float y = Convert.ToSingle(reader.ReadLine());
 
-                    Vector2f pos = new Vector2f(x, y);
-
-                    p = new Player(hp, pos);
+                    p = new Player(hp);
                 }
             }
+            else
+                p = new Player();
         }
 
         void Save()
@@ -52,8 +46,6 @@ namespace Intro2D_12_Beispiel
             using (StreamWriter writer = new StreamWriter(Path))
             {
                 writer.WriteLine(p.Hp);
-                writer.WriteLine(p.Position.X);
-                writer.WriteLine(p.Position.Y);
             }
         }
 
